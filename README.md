@@ -1,8 +1,23 @@
-# React + Vite
+Restaurant App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Descripción
 
-Currently, two official plugins are available:
+Esta aplicación es una app de restaurante que permite a los usuarios encontrar información sobre un restaurante específico. La aplicación tiene las siguientes características:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Página de inicio con un carrusel de imágenes y una sección de contacto
+Página de menú con información sobre los platos, precios y disponibilidad
+Página de contacto con información sobre el restaurante, como dirección, teléfono y correo electrónico
+Tecnologías
+
+React
+JavaScript
+Firebase
+CSS
+Bootstrap
+Estado
+
+El proyecto está en desarrollo. Actualmente, la aplicación tiene las siguientes características:
+
+Página de inicio
+Página de menú
+Página de contacto
