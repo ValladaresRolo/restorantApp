@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useParams, useLocation } from 'react-router-dom';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap';
+import './MenuDetail.css'
 
 export const MenuDetail = () => {
 
@@ -9,12 +10,12 @@ export const MenuDetail = () => {
     const menuSelected = location.state.menuSelected;
 
     return (
-        <Container fluid>
+        <Container >
             <Row>
 
 
 
-                <Col><Image src={`/src/assets/${menuSelected.img}`} fluid /></Col>
+                <Col><Image className='imagHero' src={`/src/assets/${menuSelected.img}`} fluid /></Col>
 
 
             </Row>

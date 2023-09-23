@@ -3,11 +3,12 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
+import './SeccionInfo.css'
 
 export const SeccionInfo = () => {
     return (
         <>
-            <Container >
+            <Container className='SeccionInfo' >
                 <Row>
                     <Col md={12} lg={6}><Image src="/src/assets/CasaCHILENA7.jpg" fluid /></Col>
                     <Col md={12} lg={6}><h2>Restaurante Shiba, San Clemente</h2>

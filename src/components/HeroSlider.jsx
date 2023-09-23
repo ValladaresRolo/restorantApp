@@ -1,5 +1,6 @@
 import React from 'react'
-import { Carousel, Container } from 'react-bootstrap'
+import { Carousel } from 'react-bootstrap'
+import './HeroSlider.css'
 
 export const HeroSlider = () => {
     return (
@@ -12,7 +13,7 @@ export const HeroSlider = () => {
                     <img
                         className="d-block w-100"
                         src="/src/assets/01.jpg"
-                        alt="First slide"
+                        alt="Empanadas de pino"
                     />
                     <Carousel.Caption>
                         <h3>Empanadas de pino</h3>
@@ -23,7 +24,7 @@ export const HeroSlider = () => {
                     <img
                         className="d-block w-100"
                         src="/src/assets/04.jpg"
-                        alt="Second slide"
+                        alt="Pastel de choclo"
                     />
                     <Carousel.Caption>
                         <h3>Pastel de choclo</h3>
@@ -34,7 +35,7 @@ export const HeroSlider = () => {
                     <img
                         className="d-block w-100"
                         src="/src/assets/05.jpg"
-                        alt="Third slide"
+                        alt="Curanto en hoyo"
                     />
                     <Carousel.Caption>
                         <h3>Curanto en hoyo</h3>
@@ -45,7 +46,7 @@ export const HeroSlider = () => {
                     <img
                         className="d-block w-100"
                         src="/src/assets/10.jpg"
-                        alt="Third slide"
+                        alt="Mote con huesillo"
                     />
                     <Carousel.Caption>
                         <h3>Mote con huesillo</h3>

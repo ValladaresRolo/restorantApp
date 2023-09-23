@@ -8,6 +8,7 @@ import { db } from '../firebase';
 import { collection, getDocs } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
+import './Menu.css'
 
 
 
@@ -32,13 +33,13 @@ export const Menu = () => {
     return (
         <>
 
-            <Container>
+            <Container className='contenedor '>
                 <Row xs={1} md={2} className="g-4">
 
 
                     {
                         cartaMenu.map(menu => (
-                            <Card key={menu.id} style={{ width: '18rem' }}>
+                            <Card key={menu.id} style={{ width: '18rem' }} className='cardD'>
                                 <Card.Img variant="top" src={`/src/assets/${menu.img}`} />
                                 <Card.Body>
                                     <Card.Title className="text-center">{menu.name}</Card.Title>

@@ -1,0 +1,36 @@
+.navTop {
+    background-color: #6828cb;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #000000 !important;
+}
+
+.imgLogo {
+    width: 50px;
+    height: auto;
+}
+
+.navbar-toggler {
+
+    color: #fff !important;
+    background-color: transparent;
+    border: var(--bs-border-width) solid #fff !important;
+    ;
+
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}

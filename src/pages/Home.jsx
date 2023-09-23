@@ -1,13 +1,18 @@
 import React from 'react'
 import { SeccionInfo } from '../components/SeccionInfo'
 import { HeroSlider } from '../components/HeroSlider'
+import { Container } from 'react-bootstrap'
 
 export const Home = () => {
     return (<>
-        <div>Home</div>
         <HeroSlider />
+        <Container >
 
-        <SeccionInfo />
+            <SeccionInfo />
+
+        </Container>
+
+
 
     </>
     )
