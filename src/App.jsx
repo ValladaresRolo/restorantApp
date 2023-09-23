@@ -4,6 +4,7 @@ import { Home } from "./pages/Home"
 import { Menu } from "./pages/Menu"
 import { Reserva } from "./pages/Reserva"
 import { MenuDetail } from "./pages/MenuDetail"
+import { Footer } from "./components/Footer"
 
 
 
@@ -20,6 +21,8 @@ function App() {
         <Route path="/reserva" element={<Reserva />} />
         <Route path="/menus/:sku" element={<MenuDetail />} />
       </Routes>
+
+      <Footer />
 
     </>
   )
