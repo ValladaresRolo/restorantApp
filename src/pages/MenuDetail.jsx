@@ -14,11 +14,13 @@ export const MenuDetail = () => {
 
 
 
-                <Col><Image src={menuSelected.img} fluid />{menuSelected.img}</Col>
+                <Col><Image src={`/src/assets/${menuSelected.img}`} fluid /></Col>
+
+
             </Row>
             <Row>
                 <Col><h1>{menuSelected.name}</h1></Col>
-                <Col><h2>{menuSelected.price}</h2></Col>
+                <Col><h2>${menuSelected.price}</h2></Col>
             </Row>
             <Row>
                 <Col>

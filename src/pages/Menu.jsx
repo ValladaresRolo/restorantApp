@@ -1,10 +1,13 @@
 
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 import { Link } from 'react-router-dom';
 import { db } from '../firebase';
 import { collection, getDocs } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
+import { Container } from 'react-bootstrap';
 
 
 
@@ -28,25 +31,34 @@ export const Menu = () => {
 
     return (
         <>
-            {
-                cartaMenu.map(menu => (
-                    <Card key={menu.id} style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={menu.img} />
-                        <Card.Body>
-                            <Card.Title>{menu.name}</Card.Title>
 
-                            <Card.Text className="text-center">
-                                {menu.price}
-                            </Card.Text>
-                            <Link to={`/menus/${menu.id}`} state={{ menuSelected: menu }}>
-                                <Button variant="primary">Ver Detalle</Button>
-                            </Link>
-                        </Card.Body>
-                    </Card>
-                )
-                )
+            <Container>
+                <Row xs={1} md={2} className="g-4">
 
-            }
+
+                    {
+                        cartaMenu.map(menu => (
+                            <Card key={menu.id} style={{ width: '18rem' }}>
+                                <Card.Img variant="top" src={`/src/assets/${menu.img}`} />
+                                <Card.Body>
+                                    <Card.Title className="text-center">{menu.name}</Card.Title>
+
+                                    <Card.Text className="text-center">
+                                        ${menu.price}
+                                    </Card.Text>
+                                    <Link to={`/menus/${menu.id}`} state={{ menuSelected: menu }}>
+                                        <Button variant="primary">Ver Detalle</Button>
+                                    </Link>
+                                </Card.Body>
+                            </Card>
+                        )
+                        )
+
+                    }
+
+
+                </Row>
+            </Container>
 
         </>
     )
