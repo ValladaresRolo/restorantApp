@@ -14,7 +14,7 @@ export const MenuDetail = () => {
             <Container fluid>
                 <Row>
                     <Col>
-                        <Image className='imagHero' style={{ backgroundImage: `url(https://github.com/ValladaresRolo/restorantApp/blob/main/src/assets/${menuSelected.img})` }} fluid />
+                        <Image className='imagHero' style={{ backgroundImage: `url(https://raw.githubusercontent.com/ValladaresRolo/restorantApp/main/public/${menuSelected.img})` }} fluid />
                     </Col>
                 </Row>
             </Container>

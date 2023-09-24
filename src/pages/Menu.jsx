@@ -38,7 +38,7 @@ export const Menu = () => {
                     {
                         cartaMenu.map(menu => (
                             <Card key={menu.id} style={{ width: '18rem' }} className='cardD'>
-                                <Card.Img variant="top" src={`https://github.com/ValladaresRolo/restorantApp/blob/main/src/assets/${menu.img}`} />
+                                <Card.Img variant="top" src={`https://raw.githubusercontent.com/ValladaresRolo/restorantApp/main/public/${menu.img}`} />
                                 <Card.Body>
                                     <Card.Title className="text-center">{menu.name}</Card.Title>
                                     <Card.Text className="text-center">

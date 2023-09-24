@@ -11,7 +11,7 @@ export const Reserva = () => {
 
         <Container>
             <Row>
-                <Col md={12} lg={6}><Image src="https://github.com/ValladaresRolo/restorantApp/blob/main/src/assets/CasaCHILENA7.jpg" fluid /></Col>
+                <Col md={12} lg={6}><Image src="https://raw.githubusercontent.com/ValladaresRolo/restorantApp/main/public/CasaCHILENA7.jpg" fluid /></Col>
                 <Col md={12} lg={6}><h2>Completa el Formulario</h2>
 
                     <Form>
