@@ -11,7 +11,6 @@ import { Container } from 'react-bootstrap';
 import './Menu.css'
 
 
-
 export const Menu = () => {
 
     const cartaMenuCollectionRef = collection(db, 'cartaMenu')
@@ -32,35 +31,29 @@ export const Menu = () => {
 
     return (
         <>
+            <Container className='margenes' >
 
-            <Container className='contenedor '>
+                <h1>Menu Shiba Restorant</h1>
                 <Row xs={1} md={2} className="g-4">
-
-
                     {
                         cartaMenu.map(menu => (
                             <Card key={menu.id} style={{ width: '18rem' }} className='cardD'>
                                 <Card.Img variant="top" src={`/src/assets/${menu.img}`} />
                                 <Card.Body>
                                     <Card.Title className="text-center">{menu.name}</Card.Title>
-
                                     <Card.Text className="text-center">
                                         ${menu.price}
                                     </Card.Text>
-                                    <Link to={`/menus/${menu.id}`} state={{ menuSelected: menu }}>
+                                    <Link to={`/menus/${menu.id}`} state={{ menuSelected: menu }} className='centrarBoton'>
                                         <Button variant="primary">Ver Detalle</Button>
                                     </Link>
                                 </Card.Body>
                             </Card>
                         )
                         )
-
                     }
-
-
                 </Row>
             </Container>
-
         </>
     )
 }

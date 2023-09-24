@@ -1,3 +1,45 @@
 .imagHero {
     width: 100%;
+    min-height: 300px;
+    background-color: beige;
+    background-size: cover;
+    background-position: center center;
+}
+
+.contentDescription {
+    margin: 1.5rem 0;
+}
+
+.contentDescription h1,
+.contentDescription h2 {
+    color: #6828cb;
+    font-weight: 800;
+}
+
+.contentDescription h2 {
+    font-size: 3rem;
+}
+
+.contentDescription p {
+    line-height: 1.4rem;
+    font-size: 1.3rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-button {
+    margin: 0 auto;
+}
+
+@media (max-width: 769px) {
+    .contentDescription h1 {
+        font-size: 3rem;
+    }
+
+
+
 }

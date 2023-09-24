@@ -1,62 +1,64 @@
 import React from 'react'
-import { Container, Button, Col, Form, Row } from 'react-bootstrap'
+import { Container, Button, Col, Form, Row, Image } from 'react-bootstrap'
 
 export const Reserva = () => {
     return (<>
-        <div>Reserva</div>
+
+
+        <Container><h1>Reserva</h1></Container>
+
+
+
+        <Container>
+            <Row>
+                <Col md={12} lg={6}><Image src="/src/assets/CasaCHILENA7.jpg" fluid /></Col>
+                <Col md={12} lg={6}><h2>Completa el Formulario</h2>
+
+                    <Form>
+                        <Row className="mb-3">
+                            <Form.Group as={Col} controlId="formGridEmail">
+                                <Form.Label>Email</Form.Label>
+                                <Form.Control type="email" placeholder="Enter email" />
+                            </Form.Group>
+
+
+                        </Row>
+
+                        <Form.Group className="mb-3" controlId="formGridAddress1">
+                            <Form.Label>Nombre</Form.Label>
+                            <Form.Control placeholder=" " />
+                        </Form.Group>
+
+
+
+                        <Row className="mb-3">
+                            <Form.Group as={Col} controlId="formGridCity">
+                                <Form.Label>Teléfono</Form.Label>
+                                <Form.Control />
+                            </Form.Group>
+
+                        </Row>
+
+
+                        <Button variant="primary" type="submit">
+                            Enviar
+                        </Button>
+                    </Form>
+
+
+                </Col>
+            </Row>
+
+
+
+
+        </Container>
+
+
+
 
         <Container className='contenedor'>
-            <Form>
-                <Row className="mb-3">
-                    <Form.Group as={Col} controlId="formGridEmail">
-                        <Form.Label>Email</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
-                    </Form.Group>
 
-                    <Form.Group as={Col} controlId="formGridPassword">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
-                    </Form.Group>
-                </Row>
-
-                <Form.Group className="mb-3" controlId="formGridAddress1">
-                    <Form.Label>Address</Form.Label>
-                    <Form.Control placeholder="1234 Main St" />
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="formGridAddress2">
-                    <Form.Label>Address 2</Form.Label>
-                    <Form.Control placeholder="Apartment, studio, or floor" />
-                </Form.Group>
-
-                <Row className="mb-3">
-                    <Form.Group as={Col} controlId="formGridCity">
-                        <Form.Label>City</Form.Label>
-                        <Form.Control />
-                    </Form.Group>
-
-                    <Form.Group as={Col} controlId="formGridState">
-                        <Form.Label>State</Form.Label>
-                        <Form.Select defaultValue="Choose...">
-                            <option>Choose...</option>
-                            <option>...</option>
-                        </Form.Select>
-                    </Form.Group>
-
-                    <Form.Group as={Col} controlId="formGridZip">
-                        <Form.Label>Zip</Form.Label>
-                        <Form.Control />
-                    </Form.Group>
-                </Row>
-
-                <Form.Group className="mb-3" id="formGridCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
-
-                <Button variant="primary" type="submit">
-                    Submit
-                </Button>
-            </Form>
         </Container >
 
 

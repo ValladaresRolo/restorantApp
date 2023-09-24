@@ -10,30 +10,32 @@ export const MenuDetail = () => {
     const menuSelected = location.state.menuSelected;
 
     return (
-        <Container >
-            <Row>
+        <>
+            <Container fluid>
+                <Row>
+                    <Col>
+                        <Image className='imagHero' style={{ backgroundImage: `url(/src/assets/${menuSelected.img})` }} fluid />
+                    </Col>
+                </Row>
+            </Container>
 
-
-
-                <Col><Image className='imagHero' src={`/src/assets/${menuSelected.img}`} fluid /></Col>
-
-
-            </Row>
-            <Row>
-                <Col><h1>{menuSelected.name}</h1></Col>
-                <Col><h2>${menuSelected.price}</h2></Col>
-            </Row>
-            <Row>
-                <Col>
-                    <p>{menuSelected.description}</p>
-                    <p>{menuSelected.bajada}</p>
-                    <Link to="../menu">
-                        <Button variant="primary" size="lg">
-                            Regresar al Menu
-                        </Button>
-                    </Link>
-                </Col>
-            </Row>
-        </Container>
+            <Container className='contentDescription' >
+                <Row>
+                    <Col><h1>{menuSelected.name}</h1></Col>
+                    <Col><h2>${menuSelected.price}</h2></Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <p>{menuSelected.description}</p>
+                        <p>{menuSelected.bajada}</p>
+                        <Link className='center' to="../menu">
+                            <Button variant="primary" size="lg" className="center-button">
+                                Regresar al Menu
+                            </Button>
+                        </Link>
+                    </Col>
+                </Row>
+            </Container>
+        </>
     );
 };
