@@ -10,7 +10,7 @@ export const SeccionInfo = () => {
         <>
             <Container className='SeccionInfo' >
                 <Row>
-                    <Col md={12} lg={6}><Image src="/src/assets/CasaCHILENA7.jpg" fluid /></Col>
+                    <Col md={12} lg={6}><Image src="https://github.com/ValladaresRolo/restorantApp/blob/main/src/assets/CasaCHILENA7.jpg" fluid /></Col>
                     <Col md={12} lg={6}><h2>Restaurante Shiba, San Clemente</h2>
 
 

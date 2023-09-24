@@ -14,7 +14,7 @@ export const MenuDetail = () => {
             <Container fluid>
                 <Row>
                     <Col>
-                        <Image className='imagHero' style={{ backgroundImage: `url(/src/assets/${menuSelected.img})` }} fluid />
+                        <Image className='imagHero' style={{ backgroundImage: `url(https://github.com/ValladaresRolo/restorantApp/blob/main/src/assets/${menuSelected.img})` }} fluid />
                     </Col>
                 </Row>
             </Container>
@@ -28,7 +28,7 @@ export const MenuDetail = () => {
                     <Col>
                         <p>{menuSelected.description}</p>
                         <p>{menuSelected.bajada}</p>
-                        <Link className='center' as={Link} to={'/restorantApp/menu'}>
+                        <Link className='center' as={Link} to={'/menu'}>
                             <Button variant="primary" size="lg" className="center-button">
                                 Regresar al Menu
                             </Button>

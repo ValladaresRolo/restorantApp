@@ -38,13 +38,13 @@ export const Menu = () => {
                     {
                         cartaMenu.map(menu => (
                             <Card key={menu.id} style={{ width: '18rem' }} className='cardD'>
-                                <Card.Img variant="top" src={`/src/assets/${menu.img}`} />
+                                <Card.Img variant="top" src={`https://github.com/ValladaresRolo/restorantApp/blob/main/src/assets/${menu.img}`} />
                                 <Card.Body>
                                     <Card.Title className="text-center">{menu.name}</Card.Title>
                                     <Card.Text className="text-center">
                                         ${menu.price}
                                     </Card.Text>
-                                    <Link to={`/restorantApp/menus/${menu.id}`} state={{ menuSelected: menu }} className='centrarBoton'>
+                                    <Link to={`/menus/${menu.id}`} state={{ menuSelected: menu }} className='centrarBoton'>
                                         <Button variant="primary">Ver Detalle</Button>
                                     </Link>
                                 </Card.Body>

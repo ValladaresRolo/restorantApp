@@ -12,7 +12,7 @@ export const HeroSlider = () => {
 
                     <img
                         className="d-block w-100"
-                        src="/src/assets/01.jpg"
+                        src="https://github.com/ValladaresRolo/restorantApp/blob/main/src/assets/01.jpg"
                         alt="Empanadas de pino"
                     />
                     <Carousel.Caption>
@@ -23,7 +23,7 @@ export const HeroSlider = () => {
                 <Carousel.Item interval={500}>
                     <img
                         className="d-block w-100"
-                        src="/src/assets/04.jpg"
+                        src="https://github.com/ValladaresRolo/restorantApp/blob/main/src/assets/04.jpg"
                         alt="Pastel de choclo"
                     />
                     <Carousel.Caption>
@@ -34,7 +34,7 @@ export const HeroSlider = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="/src/assets/05.jpg"
+                        src="https://github.com/ValladaresRolo/restorantApp/blob/main/src/assets/05.jpg"
                         alt="Curanto en hoyo"
                     />
                     <Carousel.Caption>
@@ -45,7 +45,7 @@ export const HeroSlider = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="/src/assets/10.jpg"
+                        src="https://github.com/ValladaresRolo/restorantApp/blob/main/src/assets/10.jpg"
                         alt="Mote con huesillo"
                     />
                     <Carousel.Caption>

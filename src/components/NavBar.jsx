@@ -9,13 +9,13 @@ export const NavBar = () => {
     return (
         <Navbar expand="lg" className="navTop">
             <Container>
-                <Navbar.Brand as={Link} to={'/restorantApp/'}  ><Image className='imgLogo' src="https://valladaresrolo.github.io/crud/img/logo-shiba.png" fluid /></Navbar.Brand>
+                <Navbar.Brand as={Link} to={'/'}  ><Image className='imgLogo' src="https://valladaresrolo.github.io/crud/img/logo-shiba.png" fluid /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link as={Link} to={'/restorantApp/'}>Inicio</Nav.Link>
-                        <Nav.Link as={Link} to={'/restorantApp/menu'} >Menu</Nav.Link>
-                        <Nav.Link as={Link} to={'/restorantApp/reserva'}>Reserva</Nav.Link>
+                        <Nav.Link as={Link} to={'/'}>Inicio</Nav.Link>
+                        <Nav.Link as={Link} to={'/menu'} >Menu</Nav.Link>
+                        <Nav.Link as={Link} to={'/reserva'}>Reserva</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
