@@ -28,7 +28,7 @@ export const MenuDetail = () => {
                     <Col>
                         <p>{menuSelected.description}</p>
                         <p>{menuSelected.bajada}</p>
-                        <Link className='center' to="../menu">
+                        <Link className='center' as={Link} to={'/restorantApp/menu'}>
                             <Button variant="primary" size="lg" className="center-button">
                                 Regresar al Menu
                             </Button>

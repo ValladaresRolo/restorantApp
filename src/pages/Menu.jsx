@@ -44,7 +44,7 @@ export const Menu = () => {
                                     <Card.Text className="text-center">
                                         ${menu.price}
                                     </Card.Text>
-                                    <Link to={`/menus/${menu.id}`} state={{ menuSelected: menu }} className='centrarBoton'>
+                                    <Link to={`/restorantApp/menus/${menu.id}`} state={{ menuSelected: menu }} className='centrarBoton'>
                                         <Button variant="primary">Ver Detalle</Button>
                                     </Link>
                                 </Card.Body>
